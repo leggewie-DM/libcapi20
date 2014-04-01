@@ -1,0 +1,4 @@
+depcomp
+configure
+Makefile.in
+debian/*.install

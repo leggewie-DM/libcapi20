@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+DEB_HOST_MULTIARCH=$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+%:
+	dh $@ --with autoreconf
+
+override_dh_autoreconf:
+	AUTOPOINT="intltoolize --automake --copy" dh_autoreconf
+
+override_dh_install:
+	set -e
+	for FILE in debian/*.install.in; \
+	do \
+		sed -e "s/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/g" $$FILE > debian/`basename $$FILE .in`; \
+	done
+	dh_install
+
+override_dh_installexamples:
+	dh_installexamples -X.in
+
+override_dh_link:
+	# replace the directory with a link to libcapi20-3 docs later
+	rm -Rf debian/libcapi20-dev/usr/share/doc/libcapi20-dev
+	dh_link
+
+override_dh_shlibdeps:
+	dh_shlibdeps -L libcapi20-3 -l debian/libcapi20-3/usr/lib/$(DEB_HOST_MULTIARCH)
