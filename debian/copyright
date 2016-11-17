@@ -12,7 +12,7 @@ Copyright: the i4l crew ( see http://www.isdn4linux.de/ )
 License: GPL-2
 
 Files: debian/*
-Copyright: 2009-2014 Rolf Leggewie <foss@rolf.leggewie.biz>
+Copyright: 2009-2016 Rolf Leggewie <foss@rolf.leggewie.biz>
 License: GPL-2
 
 Files: capi_mod.h capi20.h
