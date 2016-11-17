@@ -3,7 +3,7 @@ Section: utils
 Priority: extra
 Maintainer: Rolf Leggewie <foss@rolf.leggewie.biz>
 Uploaders: Jan-Michael Brummer <jan.brummer@tabos.org>
-Standards-Version: 3.9.5
+Standards-Version: 3.9.8
 Build-Depends: debhelper (>= 9), dh-autoreconf
 Homepage: http://www.isdn4linux.de
 Vcs-Git: git://git.debian.org/git/collab-maint/libcapi20.git
