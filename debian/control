@@ -1,6 +1,6 @@
 Source: libcapi20-3
 Section: utils
-Priority: extra
+Priority: optional
 Maintainer: Rolf Leggewie <foss@rolf.leggewie.biz>
 Uploaders: Jan-Michael Brummer <jan.brummer@tabos.org>
 Standards-Version: 3.9.8
