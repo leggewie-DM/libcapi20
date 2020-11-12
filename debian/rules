@@ -2,7 +2,7 @@
 DEB_HOST_MULTIARCH=$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
-	dh $@ --with autoreconf
+	dh $@
 
 override_dh_autoreconf:
 	AUTOPOINT="intltoolize --automake --copy" dh_autoreconf

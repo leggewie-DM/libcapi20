@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Rolf Leggewie <foss@rolf.leggewie.biz>
 Uploaders: Jan-Michael Brummer <jan.brummer@tabos.org>
 Standards-Version: 3.9.8
-Build-Depends: debhelper-compat (= 12), dh-autoreconf
+Build-Depends: debhelper-compat (= 12)
 Homepage: http://www.isdn4linux.de
 Vcs-Git: git://git.debian.org/git/collab-maint/libcapi20.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/libcapi20.git
