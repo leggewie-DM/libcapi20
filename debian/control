@@ -1,13 +1,13 @@
 Source: libcapi20-3
 Section: utils
-Priority: extra
+Priority: optional
 Maintainer: Rolf Leggewie <foss@rolf.leggewie.biz>
 Uploaders: Jan-Michael Brummer <jan.brummer@tabos.org>
 Standards-Version: 3.9.8
-Build-Depends: debhelper (>= 9), dh-autoreconf
+Build-Depends: debhelper-compat (= 12)
 Homepage: http://www.isdn4linux.de
-Vcs-Git: git://git.debian.org/git/collab-maint/libcapi20.git
-Vcs-Browser: http://git.debian.org/?p=collab-maint/libcapi20.git
+Vcs-Git: https://salsa.debian.org/debian/libcapi20.git
+Vcs-Browser: https://salsa.debian.org/debian/libcapi20
 
 Package: libcapi20-3
 Architecture: linux-any
